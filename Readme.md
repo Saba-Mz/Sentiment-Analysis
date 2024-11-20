@@ -65,4 +65,27 @@ This project applies **traditional sentiment analysis** and **state-of-the-art N
    ```bash
    git clone https://github.com/yourusername/sentiment-analysis-reviews.git
    cd sentiment-analysis-reviews
+2. Install the required packages using pip:
+First, make sure you're in the project directory, then run:
+    `pip install -r requirements.txt`
+
+3. Download NLTK Data for VADER:
+The script uses NLTK for sentiment analysis, so you'll need to download the necessary datasets by running the following Python commands:
+```import nltk
+nltk.download('vader_lexicon')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')`
+```
+4. Running the Project
+To run the script, simply execute the Python file:
+  `python sentiment_analysis.py`
+
+### Results
+**Insights into Sentiment Trends**
+- The project demonstrates how advanced models like RoBERTa provide more nuanced sentiment analysis compared to traditional tools.
+
+**Improved Understanding**
+- Visual comparisons highlight differences between models for diverse review scores.
 
